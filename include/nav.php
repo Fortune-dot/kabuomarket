@@ -12,7 +12,7 @@
                 <li class="nav-item">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="general.php">General</a>
+                    <a class="nav-link active" href="index.php">General</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="furniture.php">Furniture</a>
