@@ -11,6 +11,10 @@
     /* ---------------------------------------
     ##### - PLACE YOUR CUSTOM CSS HERE - #####
     --------------------------------------- */
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
     .footer_area{
         color: #000000!important;
     }
