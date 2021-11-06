@@ -11,7 +11,16 @@ if(isset($_POST['upload_drip'])){
 
     $target = "images/".basename($_FILES['image']['name']);
 //connect to the database    
-    $db = mysqli_connect("localhost","root","","photos");
+   //Get Heroku ClearDB connection information
+   $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+   $cleardb_server = $cleardb_url["host"];
+   $cleardb_username = $cleardb_url["user"];
+   $cleardb_password = $cleardb_url["pass"];
+   $cleardb_db = substr($cleardb_url["path"], 1);
+   $active_group = 'default';
+   $query_builder = TRUE;
+   // Connect to DB
+   $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db,);
 //get all the submitted data from the form
     $image = $_FILES['image']['name'];  
     $text = $_POST['text'];
@@ -21,7 +30,7 @@ if(isset($_POST['upload_drip'])){
 
    
     $sql = "INSERT INTO drip(image,text,price,location,number)VALUES('$image','$text','$price','$location','$number')";
-    mysqli_query($db,$sql);//stores submitted data into database table:images
+    mysqli_query($conn,$sql);//stores submitted data into database table:images
 
 //lets move uploaded image into folder:images
      if(move_uploaded_file($_FILES['image']['tmp_name'],$target)){
