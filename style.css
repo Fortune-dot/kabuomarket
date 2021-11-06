@@ -322,3 +322,21 @@ img{
 }
 
 /* PRODUCT PAGE CSS */
+
+.content-holder{
+    
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    height: 4rem!important;
+}
+.mycards{
+    padding-top: 30px;
+}
+.black-logo{
+    max-height: 150px!important;
+    max-width: 150px!important;
+}
+.myfooter{
+    width: 100%!important;
+}

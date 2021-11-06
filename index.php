@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,12 +18,9 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
-   
-
     <!-- ##### Main Content Wrapper Start ##### -->
-    <div class="main-content-wrapper d-flex clearfix">
+    <div class="main-content-wrapper d-flex clearfix main-stuff" >
 
         <!-- Mobile Nav (max width 767px)-->
         <div class="mobile-nav">
@@ -51,25 +47,20 @@
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Second Hand Shop</a></li>
-                    <li><a href="product-details.html">Delivery Services</a></li>
-                    <li><a href="cart.html">Featured product</a></li>
-                    <li><a href="checkout.html">Contact me</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
+                    <li><a href="general.php">General</a></li>
+                    <li><a href="electronics.php">Electronics</a></li>
+                    <li><a href="furniture.php">Furniture</a></li>
+                    <li><a href="drip.php">Clothes</a></li>
+                 
                 </ul>
             </nav>
             <!-- Button Group -->
             <div class="amado-btn-group mt-30 mb-100">
                 <a href="#" class="btn amado-btn mb-15"> 30% Discount</a>
-                <a href="#" class="btn amado-btn active">New this week</a>
+                <a href="general.html" class="btn amado-btn active">New this week</a>
             </div>
-            <!-- 
-            <div class="cart-fav-search mb-100">
-                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
-                <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
-            </div>
-             -->
+         
             <div class="social-info d-flex justify-content-between">
                 <a href="#"><i class="fa fa-youtube pin" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/kabarakplug/" target="_blank"><i class="fa fa-instagram ig" aria-hidden="true"></i></a>
@@ -87,7 +78,7 @@
 
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
+                    <a href="general.php">
                         <img src="img/bg-img/2.png" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
@@ -100,7 +91,7 @@
 
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
+                    <a href="delivery.php">
                         <img src="img/bg-img/3.png" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
@@ -112,7 +103,7 @@
 
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
+                    <a href="drip.php">
                         <img src="img/bg-img/4.jfif" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
@@ -122,21 +113,6 @@
                         </div>
                     </a>
                 </div>
-<!-- 
-     
-                
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="img/bg-img/5.jpg" alt="">
-                       
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $18</p>
-                            <h4>Plant Pot</h4>
-                        </div>
-                    </a>
-                </div>   
-      -->
 
 
     </div>
@@ -148,9 +124,12 @@
             <div class="row align-items-center">
                 <!-- Newsletter Text -->
                 <div class="col-12 col-lg-6 col-xl-7">
-                    <div class="newsletter-text mb-100">
-                        <h2>Sell here starting with as low as<span> 25ksh* </span></h2>
-                        <p>Contact now and get item uploaded instantly<h3>⚡⚡🐱‍🏍🐱‍🏍</h3></p>
+                    <div class="newsletter-text mb-100" class="linkbox">
+                        <h2>Sell here with only ksh<span> 5 per Upload </span></h2>
+                        <p style="color: antiquewhite; max-width: 600px;">
+                       Make sure to upload to specific category by uploading on that page👍🐱‍💻🐱‍💻
+
+                      </p>
                     </div>
                 </div>
                 <!-- Newsletter Form -->
@@ -158,9 +137,7 @@
                     <div class="newsletter-form mb-100">
                         <form  class="contact-area mybox" action="#" method="post">
                             <div class="holder">
-                                
-                           <h2 class="whatsapp_number">0798631120</h2>
-                           <div class="sub-div">  </h4>
+                          
                                </div>
                               
                             </div>
@@ -173,7 +150,7 @@
     <!-- ##### Newsletter Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer_area my_footer clearfix">
+    <footer class="footer_area my_footer clearfix myfooter">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Single Widget Area -->
