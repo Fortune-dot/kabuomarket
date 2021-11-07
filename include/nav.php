@@ -1,7 +1,7 @@
 <!--NAVBAR START-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a href="index.php"><img src="./images/logo.png" alt="" class="black-logo"></a>
+        <a href="index.php"><img src="./images/logo.png" alt="" class="black-logo create-new module a"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">

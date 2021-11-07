@@ -81,6 +81,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 </div>
 </body>
 
+
 <?php
-include("./include/footer.php");
+include('./include/footer.php');
+
 ?>
